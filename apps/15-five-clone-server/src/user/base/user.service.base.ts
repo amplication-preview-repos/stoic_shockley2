@@ -74,4 +74,7 @@ export class UserServiceBase {
       })
       .checkIns(args);
   }
+  async NotifyUser(args: string): Promise<string> {
+    throw new Error("Not implemented");
+  }
 }

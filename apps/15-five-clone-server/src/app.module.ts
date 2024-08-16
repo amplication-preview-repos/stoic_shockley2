@@ -4,6 +4,7 @@ import { ObjectiveModule } from "./objective/objective.module";
 import { FeedbackModule } from "./feedback/feedback.module";
 import { KeyResultModule } from "./keyResult/keyResult.module";
 import { CheckInModule } from "./checkIn/checkIn.module";
+import { NotificationModule } from "./notification/notification.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
 import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
@@ -29,6 +30,7 @@ import { AuthModule } from "./auth/auth.module";
     FeedbackModule,
     KeyResultModule,
     CheckInModule,
+    NotificationModule,
     HealthModule,
     PrismaModule,
     SecretsManagerModule,

@@ -153,4 +153,12 @@ export class UserResolverBase {
 
     return results;
   }
+
+  @graphql.Mutation(() => String)
+  async NotifyUser(
+    @graphql.Args("args")
+    args: string
+  ): Promise<string> {
+    return this.service.NotifyUser(args);
+  }
 }

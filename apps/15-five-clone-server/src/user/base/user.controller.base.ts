@@ -314,4 +314,21 @@ export class UserControllerBase {
       select: { id: true },
     });
   }
+
+  @common.Post("/notifications")
+  @swagger.ApiOkResponse({
+    type: String,
+  })
+  @swagger.ApiNotFoundResponse({
+    type: errors.NotFoundException,
+  })
+  @swagger.ApiForbiddenResponse({
+    type: errors.ForbiddenException,
+  })
+  async NotifyUser(
+    @common.Body()
+    body: string
+  ): Promise<string> {
+    return this.service.NotifyUser(body);
+  }
 }
